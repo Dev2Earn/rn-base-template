@@ -7,19 +7,19 @@ import {
   PERSIST,
   PURGE,
   REGISTER,
-} from "redux-persist";
-import { configureStore } from "@reduxjs/toolkit";
-import createSagaMiddleware from "redux-saga";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { rootSaga } from "@/store/rootSaga";
-import rootReducers from "@/store/rootReducers";
+} from 'redux-persist';
+import { configureStore } from '@reduxjs/toolkit';
+import createSagaMiddleware from 'redux-saga';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { rootSaga } from '@/store/rootSaga';
+import rootReducers from '@/store/rootReducers';
 
 const version = 21120201;
 
 const persistConfig = {
-  key: "root",
+  key: 'root',
   storage: AsyncStorage,
-  whitelist: ["authenticated"],
+  whitelist: ['authenticated'],
   version
 };
 

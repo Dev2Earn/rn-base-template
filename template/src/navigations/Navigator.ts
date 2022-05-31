@@ -1,5 +1,6 @@
-import { createRef } from "react";
-import { CommonActions, NavigationContainerRef } from "@react-navigation/native";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { createRef } from 'react';
+import { CommonActions, NavigationContainerRef } from '@react-navigation/native';
 
 export const navigationRef = createRef<NavigationContainerRef>(null);
 

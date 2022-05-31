@@ -5,9 +5,19 @@ module.exports = {
       'module-resolver',
       {
         root: ['./src'],
-        extensions: ['.js', '.json'],
+        extensions: [ 
+          '.ios.ts',
+          '.android.ts',
+          '.ts',
+          '.tsx',
+          '.ios.tsx',
+          '.android.tsx',
+          '.jsx',
+          '.js',
+          '.json'
+        ],
         alias: {
-          '@': './src',
+          '@src': './src',
         },
       },
     ],

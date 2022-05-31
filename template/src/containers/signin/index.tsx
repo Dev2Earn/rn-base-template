@@ -7,6 +7,8 @@ import { loginRequest } from '@/store/authenticated/actions';
 import { t } from '@/locales';
 import { appModal } from '@/modal';
 import { ScreenName } from '@/navigations/model';
+import { NormalText } from '@/components';
+import { colors } from '@/configs/constants/color';
 
 const Signin = () =>
 {
@@ -51,6 +53,9 @@ const Signin = () =>
     }}>
       <Button title={t('authenticated.login')} onPress={handleSignin} />
       <Button title={'Show modal'} onPress={handleShowModal} />
+      <NormalText color={colors.blue100} >
+        {'Test chu ne'}
+      </NormalText>
     </View>
   );
 };

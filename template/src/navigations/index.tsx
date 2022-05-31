@@ -7,9 +7,7 @@ import { useSelector } from 'react-redux';
 import { navigationRef } from './Navigator';
 import { NavigatorParamList } from '@/models/navigation';
 import { ScreenName } from './model';
-import Home from '@/containers/home';
 import Signin from '@/containers/signin';
-import { View } from 'react-native';
 import RootScreen from '@/containers';
 
 const Stack = createNativeStackNavigator<NavigatorParamList>();
@@ -22,8 +20,8 @@ const AppNavigator = () => {
           headerShown: false,
         }}
       >
-        <Stack.Screen name={ScreenName.Root} component={RootScreen} />
         <Stack.Screen name={ScreenName.Signin} component={Signin} />
+        <Stack.Screen name={ScreenName.Root} component={RootScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

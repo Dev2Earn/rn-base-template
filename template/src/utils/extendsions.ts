@@ -1,26 +1,50 @@
-export {};
+/* eslint-disable no-extend-native */
+import _isEmpty from 'lodash/isEmpty';
+
+export { };
 
 declare global
 {
-  interface String {
+  interface String
+  {
     capitalize(): string;
     toLowerASCII(): string;
+    isEmpty(): boolean;
+    isNotEmpty(): boolean;
+  }
+  interface Number
+  {
+    f(): number;
+    w(): number;
+    h(): number;
+    r(): number;
   }
 }
 
-String.prototype.capitalize = function () {
+String.prototype.isNotEmpty = function ()
+{
+  return !_isEmpty(this);
+};
+
+String.prototype.isEmpty = function ()
+{
+  return _isEmpty(this);
+};
+
+String.prototype.capitalize = function ()
+{
   return this.charAt(0).toUpperCase() + this.slice(1);
 };
 
 String.prototype.toLowerASCII = function ()
 {
   let str = this.toLowerCase();
-  str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, 'a'); 
-  str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, 'e'); 
-  str = str.replace(/ì|í|ị|ỉ|ĩ/g, 'i'); 
-  str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, 'o'); 
-  str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, 'u'); 
-  str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, 'y'); 
+  str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, 'a');
+  str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, 'e');
+  str = str.replace(/ì|í|ị|ỉ|ĩ/g, 'i');
+  str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, 'o');
+  str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, 'u');
+  str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, 'y');
   str = str.replace(/đ/g, 'd');
   str = str.replace(/À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ/g, 'A');
   str = str.replace(/È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ/g, 'E');
@@ -40,6 +64,6 @@ String.prototype.toLowerASCII = function ()
   // Remove punctuations
   // Bỏ dấu câu, kí tự đặc biệt
   //   str = str.replace(/!|@|%|\^|\*|\(|\)|\+|\\=|\\<|\\>|\?|\/|,|\.|\\:|\\;|\\'|\\"|\\&|\\#|\[|\]|~|\$|_|`|-|{|}|\||\\/g, ' ');
-    
+
   return str;
 };
