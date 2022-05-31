@@ -1,4 +1,4 @@
-import { IAuthenticatedState } from '@/store/authenticated/types';
+import { IAuthenticatedState } from '@src/store/authenticated/types';
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState: IAuthenticatedState = { isAuthenticated: false };

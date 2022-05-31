@@ -7,8 +7,8 @@
 import { StyleSheet, View, ViewProps } from 'react-native';
 import React from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { scale } from '@/utils/scale';
-import { colors } from '@/configs/constants/color';
+import { scale } from '@src/utils/scale';
+import { colors } from '@src/configs/constants/color';
 
 type IHeaderWrapper = ViewProps
 

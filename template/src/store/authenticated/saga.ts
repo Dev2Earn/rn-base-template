@@ -1,5 +1,5 @@
-import { loginFailed, loginSuccess } from '@/store/authenticated/slices';
-import { ILoginPayloadAction, LOGIN_REQUEST } from '@/store/authenticated/types';
+import { loginFailed, loginSuccess } from '@src/store/authenticated/slices';
+import { ILoginPayloadAction, LOGIN_REQUEST } from '@src/store/authenticated/types';
 import { call, put, takeLeading } from 'redux-saga/effects';
 
 function* login(action: ILoginPayloadAction)

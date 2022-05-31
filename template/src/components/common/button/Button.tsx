@@ -13,9 +13,9 @@ import {
 } from 'react-native';
 import React from 'react';
 import NormalText from '../text/NormalText';
-import { colors } from '@/configs/constants/color';
-import { font, scale } from '@/utils/scale';
-import { fontFamily } from '@/configs/constants/font';
+import { colors } from '@src/configs/constants/color';
+import { font, scale } from '@src/utils/scale';
+import { fontFamily } from '@src/configs/constants/font';
 
 interface IButton extends Partial<PressableProps> {
   label: string;

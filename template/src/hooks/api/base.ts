@@ -1,8 +1,8 @@
 import { useCallback } from 'react';
 import { useInfiniteQuery } from 'react-query';
-import api from '@/configs/api';
-import { buildURL } from '@/utils';
-import { DEFAULT_PAGE_SIZE } from '@/configs/constants';
+import api from '@src/configs/api';
+import { buildURL } from '@src/utils';
+import { DEFAULT_PAGE_SIZE } from '@src/configs/constants';
 
 interface fetcherProps
 {

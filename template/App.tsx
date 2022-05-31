@@ -1,11 +1,11 @@
 import React from 'react';
-import AppNavigation from '@/navigations';
+import AppNavigation from '@src/navigations';
 import { Provider } from 'react-redux';
-import { persistor, store } from '@/store';
+import { persistor, store } from '@src/store';
 import { PersistGate } from 'redux-persist/integration/react';
-import '@/configs';
-import BaseModal from '@/modal/modal';
-import { appModal } from '@/modal';
+import '@src/configs';
+import BaseModal from '@src/modal/modal';
+import { appModal } from '@src/modal';
 
 
 

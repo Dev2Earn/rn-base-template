@@ -1,4 +1,4 @@
-import localeResource from '@/locales/translations';
+import localeResource from '@src/locales/translations';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 

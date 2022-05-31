@@ -8,9 +8,9 @@ import { LayoutAnimation, Pressable, StyleSheet } from 'react-native';
 import React, { useState } from 'react';
 import debounce from 'lodash/debounce';
 import NormalText from '../text/NormalText';
-import { scale, verticalScale } from '@/utils/scale';
-import { colors } from '@/configs/constants/color';
-import { CheckedIc, UncheckIc } from '@/components/common/icon';
+import { scale, verticalScale } from '@src/utils/scale';
+import { colors } from '@src/configs/constants/color';
+import { CheckedIc, UncheckIc } from '@src/components/common/icon';
 
 interface ICheckBox {
   defaultValue?: boolean;

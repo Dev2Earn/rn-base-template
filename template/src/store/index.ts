@@ -11,8 +11,8 @@ import {
 import { configureStore } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { rootSaga } from '@/store/rootSaga';
-import rootReducers from '@/store/rootReducers';
+import { rootSaga } from '@src/store/rootSaga';
+import rootReducers from '@src/store/rootReducers';
 
 const version = 21120201;
 

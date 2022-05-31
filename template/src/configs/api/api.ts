@@ -1,5 +1,5 @@
 import axios, { AxiosRequestHeaders } from 'axios';
-import { API_ROOT, TIME_OUT } from '@/configs/constants/api';
+import { API_ROOT, TIME_OUT } from '@src/configs/constants/api';
 
 const network = axios.create({
   baseURL: API_ROOT,

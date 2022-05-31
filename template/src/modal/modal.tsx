@@ -1,4 +1,4 @@
-import { IBaseModalConfig, RefBaseModal } from '@/modal';
+import { IBaseModalConfig, RefBaseModal } from '@src/modal';
 import React, {
   forwardRef,
   ReactNode,

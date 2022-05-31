@@ -12,10 +12,10 @@ import {
   View,
 } from 'react-native';
 import React, { useRef, useState } from 'react';
-import { fontFamily } from '@/configs/constants/font';
-import { font, scale } from '@/utils/scale';
-import { colors } from '@/configs/constants/color';
-import { EyeCloseIc, EyeIc } from '@/components/common/icon';
+import { fontFamily } from '@src/configs/constants/font';
+import { font, scale } from '@src/utils/scale';
+import { colors } from '@src/configs/constants/color';
+import { EyeCloseIc, EyeIc } from '@src/components/common/icon';
 
 const TEXT_INPUT_MAX_LEN = 255;
 

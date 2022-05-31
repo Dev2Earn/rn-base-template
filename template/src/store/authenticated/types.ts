@@ -1,4 +1,4 @@
-import { ILoginBody } from '@/models/authenticated';
+import { ILoginBody } from '@src/models/authenticated';
 import { PayloadAction } from '@reduxjs/toolkit';
 
 // saga action defined

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { View, Text, Button } from 'react-native';
 
-import { goback } from '@/navigations/Navigator';
-import { useAppSelector } from '@/store/hooks';
+import { goback } from '@src/navigations/Navigator';
+import { useAppSelector } from '@src/store/hooks';
 
 const Home = () => {
   const authenticated = useAppSelector(state => state.authenticated);

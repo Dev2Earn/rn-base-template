@@ -1,7 +1,8 @@
 import { Platform, Text, TextProps } from 'react-native';
 import React from 'react';
 import { scale } from 'react-native-size-matters';
-import { fontFamily } from '@/configs/constants/font';
+import { fontFamily } from '@src/configs/constants/font';
+import { verticalScale } from '@src/utils/scale';
 
 interface INormalText extends TextProps {
   fontFamily: fontFamily;
@@ -36,7 +37,7 @@ NormalText.defaultProps = {
   fontFamily: fontFamily.montserratRegular,
   fontSize: scale(14),
   textAlign: 'left',
-  lineHeight: 22,
+  lineHeight: verticalScale(22),
 };
 
 export default NormalText;

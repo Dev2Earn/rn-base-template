@@ -1,14 +1,14 @@
 import React from 'react';
 import { View, Button, Text } from 'react-native';
 
-import { navigate } from '@/navigations/Navigator';
-import { useAppDispatch, useAppSelector } from '@/store/hooks';
-import { loginRequest } from '@/store/authenticated/actions';
-import { t } from '@/locales';
-import { appModal } from '@/modal';
-import { ScreenName } from '@/navigations/model';
-import { NormalText } from '@/components';
-import { colors } from '@/configs/constants/color';
+import { navigate } from '@src/navigations/Navigator';
+import { useAppDispatch, useAppSelector } from '@src/store/hooks';
+import { loginRequest } from '@src/store/authenticated/actions';
+import { t } from '@src/locales';
+import { appModal } from '@src/modal';
+import { ScreenName } from '@src/navigations/model';
+import { colors } from '@src/configs/constants/color';
+import NormalText from '@src/components/common/text/NormalText';
 
 const Signin = () =>
 {
@@ -24,14 +24,14 @@ const Signin = () =>
     
   const handleShowModal = () =>
   {
-      appModal.current?.show({
-        child: renderAbc(),
-        config: {
-          onDismiss: () => { console.log('dismiss'); },
-          onModalHide: () => console.log('hide ne'),
-          backdropColor: '#333'
-        }
-      });
+    appModal.current?.show({
+      child: renderAbc(),
+      config: {
+        onDismiss: () => { console.log('dismiss'); },
+        onModalHide: () => console.log('hide ne'),
+        backdropColor: '#333'
+      }
+    });
   };
     
   const renderAbc = () =>
@@ -51,8 +51,11 @@ const Signin = () =>
       justifyContent: 'center',
       alignItems: 'center'
     }}>
-      <Button title={t('authenticated.login')} onPress={handleSignin} />
-      <Button title={'Show modal'} onPress={handleShowModal} />
+      {/* <Button title={t('authenticated.login')} onPress={handleSignin} />
+      <Button title={'Show modal'} onPress={handleShowModal} /> */}
+      <NormalText color={colors.blue100} >
+        {'Test chu ne'}
+      </NormalText>
       <NormalText color={colors.blue100} >
         {'Test chu ne'}
       </NormalText>

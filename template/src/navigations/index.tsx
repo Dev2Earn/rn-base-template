@@ -5,10 +5,10 @@ import { useSelector } from 'react-redux';
 
 
 import { navigationRef } from './Navigator';
-import { NavigatorParamList } from '@/models/navigation';
+import { NavigatorParamList } from '@src/models/navigation';
 import { ScreenName } from './model';
-import Signin from '@/containers/signin';
-import RootScreen from '@/containers';
+import Signin from '@src/containers/signin';
+import RootScreen from '@src/containers';
 
 const Stack = createNativeStackNavigator<NavigatorParamList>();
 

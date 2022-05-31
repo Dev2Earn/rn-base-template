@@ -1,4 +1,4 @@
-import { ScreenName } from '@/navigations/model';
+import { ScreenName } from '@src/navigations/model';
 
 export type NavigatorParamList = {
   [ScreenName.Root]: undefined;

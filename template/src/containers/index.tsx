@@ -1,4 +1,4 @@
-import Home from '@/containers/home';
+import Home from '@src/containers/home';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
